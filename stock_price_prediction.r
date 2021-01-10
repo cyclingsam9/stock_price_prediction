@@ -1,15 +1,10 @@
-
-# Load Packages -----------------------------------------------------------
-p_load(quantmod #used to load in financial data
-       ,xts
-       ,rvest,tidyverse,stringr,forcats,lubridate,plotly,dplyr
-       ,PerformanceAnalytics
-       ,RSelenium#used for web scraping - alternative to quantmod - https://www.pluralsight.com/guides/advanced-web-scraping-with-r
-       ,Quandl
-       ,tidyquant #this includes quantmod and should be main package to use for price data + technical indicators
-       )
+# load packages ----
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+source('../US-Actuarial-Functions-Modules/R/package_load.r')
+package_load()
 # Quandl.api_key("P7BZZnu_L2A44sDf4fhK")
-
+# set wd
+setwd('../../SamsShiz/Google Drive/Money/Investments')
 
 # Pull Data ---------------------------------------------------------------
 # * Investor sentiment data -----------------------------------------------
